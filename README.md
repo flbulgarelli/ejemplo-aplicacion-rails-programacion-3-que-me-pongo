@@ -1,24 +1,16 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Este es el repositorio del proyecto **QueMePongo**, una aplicación de código libre
+para gestionar tu guardarropas.
 
-Things you may want to cover:
+## Pasos de instalación
 
-* Ruby version
+Primero que nada vas a necesitar instalar `rails`.
 
-* System dependencies
+```
+gem install rails
+```
 
-* Configuration
+...
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+## Configuración de la base de datos
