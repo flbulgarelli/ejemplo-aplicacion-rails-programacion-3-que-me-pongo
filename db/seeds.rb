@@ -12,6 +12,12 @@
 # rails db:schema:load (carga el archivo schema.rb)
 # rails db:seed
 #
+# Nota: mientras que schema:load carga la base de datos con el schema.rb
+# tal como está, el migrate actualiza la base y modifica al archivo schema.rb para
+# que podamos usarlo más tarde.
+# por lo tanto, cuando nos bajamos un proyecto por primera vez, lo mas comun será usar
+# el schema:load, pero a medida que lo vamos desarrondo usaremos más el otro.
+
 Prenda.create! descripcion: "remera que uso para dormir", tipo: :remera
 Prenda.create! descripcion: "otra remera vieja del recital de foo fighters", tipo: :remera
 Prenda.create! descripcion: "zapatillas negras converse", tipo: :zapatillas
