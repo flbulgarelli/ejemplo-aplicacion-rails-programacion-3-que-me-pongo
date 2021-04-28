@@ -1,7 +1,21 @@
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the rails db:seed command (or created alongside the database with db:setup).
+# si ejecutan db:seed, rails va a leer este archivo y ejecutar cada línea, llenando
+# de datos de prueba a la misma
+
+# lo mas común es ejecutar las siguientes operaciones en orden:
+# opcion 1:
+# rails db:create
+# rails db:migrate (ejecuta las migraciones)
+# rails db:seed
 #
-# Examples:
+# opcion 2:
+# rails db:create
+# rails db:schema:load (carga el archivo schema.rb)
+# rails db:seed
 #
-#   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
-#   Character.create(name: 'Luke', movie: movies.first)
+Prenda.create! descripcion: "remera que uso para dormir", tipo: :remera
+Prenda.create! descripcion: "otra remera vieja del recital de foo fighters", tipo: :remera
+Prenda.create! descripcion: "zapatillas negras converse", tipo: :zapatillas
+Prenda.create! descripcion: "pantalón de vestir negro", tipo: :pantalon
+Prenda.create! descripcion: "camisa blanca", tipo: :camisa
+Prenda.create! descripcion: "anteojos de sol azul", tipo: :accesorio
+Prenda.create! descripcion: "short de pileta", tipo: :pantalon

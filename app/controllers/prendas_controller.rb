@@ -1,4 +1,15 @@
+# Importante:
+#
+# En la arquitectura MVC
+# los controladores son responsables de "hablar"
+# con el modelo para hacer búsquedas, actualizaciones, etc e incluso algunas operaciones que no caen en la semántica de un CRUD.
+# Además, van interactuar con la información proveniente del request HTTP (por ejemplo los parámetros) e indicar qué se tiene que mostrar a continuación
+#
+# Por otro lado, las vistas se encargan únicamente de mostrar (dibujar aka renderizar) información. NO realizan operaciones como .all, .find, etc.
+#
 class PrendasController < ApplicationController
+
+
   # get /prendas/
   def index
     @prendas = Prenda.all
@@ -22,6 +33,6 @@ end
 #
 # 3. Implícitamente, al terminar de evaluar el método show, como no decimos nada en contrario,
 # se va a renderizar la vista views/prendas/show.hml.erb
-# 
+#
 # 4. la vista correspondiente dibuja un html utilizando
 # la variable @prenda que fue seteada previamente en el controlador

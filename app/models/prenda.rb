@@ -1,3 +1,3 @@
 class Prenda < ApplicationRecord
-  enum tipo: [:pantalon, :remera, :pollera]
+  enum tipo: [:pantalon, :remera, :pollera, :zapatillas, :camisa, :accesorio]
 end
