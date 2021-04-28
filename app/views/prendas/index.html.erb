@@ -1,11 +1,8 @@
 <h2>Tus prendas</h2>
 
 
-
 <ul>
-  <li>
-    <%= link_to @prendas.first.descripcion, @prendas.first %>
-  </li>
-  <li><a href="/prendas/2">Pantalon de vestir</a></li>
-  <li><a href="/prendas/3">Ojotas</a></li>
+  <% @prendas.each do |prenda| %>
+      <li><%= link_to prenda.descripcion, prenda %></li>
+  <% end %>
 </ul>
