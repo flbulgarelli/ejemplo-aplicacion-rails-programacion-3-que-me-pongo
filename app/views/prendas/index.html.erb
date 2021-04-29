@@ -1,8 +1,9 @@
 <h2>Tus prendas</h2>
 
-
 <ul>
   <% @prendas.each do |prenda| %>
       <li><%= link_to prenda.descripcion, prenda %></li>
   <% end %>
 </ul>
+
+<%= link_to "Crear nueva prenda", 'prendas/new' %>
