@@ -18,10 +18,14 @@
 # por lo tanto, cuando nos bajamos un proyecto por primera vez, lo mas comun será usar
 # el schema:load, pero a medida que lo vamos desarrondo usaremos más el otro.
 
-Prenda.create! descripcion: "remera que uso para dormir", tipo: :remera
-Prenda.create! descripcion: "otra remera vieja del recital de foo fighters", tipo: :remera
-Prenda.create! descripcion: "zapatillas negras converse", tipo: :zapatillas
-Prenda.create! descripcion: "pantalón de vestir negro", tipo: :pantalon
-Prenda.create! descripcion: "camisa blanca", tipo: :camisa
-Prenda.create! descripcion: "anteojos de sol azul", tipo: :accesorio
-Prenda.create! descripcion: "short de pileta", tipo: :pantalon
+vieja = Guardarropa.create! nombre: "Ropa vieja"
+favorita = Guardarropa.create! nombre: "Ropa favorita"
+trabajo = Guardarropa.create! nombre: "Ropa de trabajo"
+
+vieja.prendas.create! descripcion: "remera que uso para dormir", tipo: :remera
+favorita.prendas.create! descripcion: "otra remera vieja del recital de foo fighters", tipo: :remera
+favorita.prendas.create! descripcion: "zapatillas negras converse", tipo: :zapatillas
+trabajo.prendas.create! descripcion: "pantalón de vestir negro", tipo: :pantalon
+trabajo.prendas.create! descripcion: "camisa blanca", tipo: :camisa
+favorita.prendas.create! descripcion: "anteojos de sol azul", tipo: :accesorio
+favorita.prendas.create! descripcion: "short de pileta", tipo: :pantalon
