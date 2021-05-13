@@ -22,7 +22,9 @@ vieja = Guardarropa.create! nombre: "Ropa vieja"
 favorita = Guardarropa.create! nombre: "Ropa favorita"
 trabajo = Guardarropa.create! nombre: "Ropa de trabajo"
 
-vieja.prendas.create! descripcion: "remera que uso para dormir", tipo: :remera
+remera_para_dormir = Prenda.create! descripcion: "remera que uso para dormir", tipo: :remera
+vieja.prendas << remera_para_dormir
+favorita.prendas << remera_para_dormir
 favorita.prendas.create! descripcion: "otra remera vieja del recital de foo fighters", tipo: :remera
 favorita.prendas.create! descripcion: "zapatillas negras converse", tipo: :zapatillas
 trabajo.prendas.create! descripcion: "pantalón de vestir negro", tipo: :pantalon
